@@ -3,6 +3,11 @@
     "createBoard": {
       "name": "testBoard",
       "description": "Test board created with the API"
+    },
+    "createPin": {
+      "note": "reallyDog",
+      "board": "Isabely51/testcreateboard",
+      "imgUrl": "https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg"
     }
   }
 ]
