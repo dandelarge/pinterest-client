@@ -1,0 +1,146 @@
+{
+	"id": "0c7f382e-f517-4949-8266-161b77f7cba1",
+	"name": "pinterrest",
+	"allTests": [],
+	"timestamp": "2017-11-17T12:27:55.736Z",
+	"collection_id": "41205df8-e85d-30a9-0120-fa92fe89c101",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "c5b9c62a-c5dd-81f7-6189-1c48182465d9",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "41205df8-e85d-30a9-0120-fa92fe89c101",
+		"name": "pinterrest",
+		"description": "",
+		"order": [
+			"991d7b4f-6057-4edb-f88c-b3c78b75a2a6",
+			"f14ee22d-7cae-4419-0649-dc8c97144e39"
+		],
+		"folders": [],
+		"folders_order": [],
+		"timestamp": 1510915786809,
+		"synced": false,
+		"remote_id": 0,
+		"owner": 0,
+		"sharedWithTeam": false,
+		"subscribed": false,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"createdAt": 1510915786809,
+		"updatedAt": 1510918134197,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {}
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "boards",
+			"id": "991d7b4f-6057-4edb-f88c-b3c78b75a2a6",
+			"url": "https://api.pinterest.com/v1/me/boards?access_token=AToA02pNTTPdiGUjp-KCuVRqOL3VFPfZtkzIyShEeiSCI6A9ZAAAAAA",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"321"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "321",
+			"totalRequestTime": "321",
+			"iterationResults": {}
+		},
+		{
+			"name": "create Board",
+			"id": "f14ee22d-7cae-4419-0649-dc8c97144e39",
+			"url": "https://api.pinterest.com/v1/boards/?access_token=AToA02pNTTPdiGUjp-KCuVRqOL3VFPfZtkzIyShEeiSCI6A9ZAAAAAA&name={{createBoard.name}}&description={{createBoard.description}}",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "INTERNAL SERVER ERROR",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"133"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "133",
+			"totalRequestTime": "133",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 1,
+	"totalFail": 0,
+	"totalTime": 454,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "boards",
+			"id": "991d7b4f-6057-4edb-f88c-b3c78b75a2a6",
+			"url": "https://api.pinterest.com/v1/me/boards?access_token=AToA02pNTTPdiGUjp-KCuVRqOL3VFPfZtkzIyShEeiSCI6A9ZAAAAAA",
+			"time": "2017-11-17T12:27:55.736Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "create Board",
+			"id": "f14ee22d-7cae-4419-0649-dc8c97144e39",
+			"url": "https://api.pinterest.com/v1/boards/?access_token=AToA02pNTTPdiGUjp-KCuVRqOL3VFPfZtkzIyShEeiSCI6A9ZAAAAAA&name={{createBoard.name}}&description={{createBoard.description}}",
+			"time": "2017-11-17T12:27:55.736Z",
+			"responseCode": {
+				"code": 500,
+				"name": "INTERNAL SERVER ERROR",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}

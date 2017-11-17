@@ -1,0 +1,54 @@
+{
+	"info": {
+		"name": "pinterrest",
+		"_postman_id": "41205df8-e85d-30a9-0120-fa92fe89c101",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "boards",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://api.pinterest.com/v1/me/boards?access_token={{access_token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"pinterest",
+						"com"
+					],
+					"path": [
+						"v1",
+						"me",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "{{access_token}}",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

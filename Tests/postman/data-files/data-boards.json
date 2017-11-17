@@ -1,0 +1,8 @@
+[
+  {
+    "createBoard": {
+      "name": "testBoard",
+      "description": "Test board created with the API"
+    }
+  }
+]
